@@ -1,2 +1,35 @@
 Segue os comando do Git
 
+cd C:/caminho/caminho/nomepasta/ (Entre com o caminho da pasta onde irá trabalhar )
+git init (Inicialize o Git)
+
+git config --global user.name "seuNomeDeUsuario"
+git config --global user.email "meu_nome@email.com"
+(Configure sua conta)
+
+git clone "Nome da URL ou Caminho" (Clonando um repositório)
+
+git pull origin master ou git pull origin (Para ter seu repositório local sempre sincronizado/atualizado com o repositório online, você precisará puxar as alterações)
+
+git status
+git diff(Status com mais detalhes)
+git diff --staged(é posssivel comparar o as alterações feitas com o último commit)
+git diff --cached(apresenta o que está sendo mudado até o momento)
+
+git add .(Para adicionar todos os arquivos que modificou, digite o código)
+git add -u (Para adicionar a lista de commit os arquivos que foram escluídos)
+git add nome-do-arquivo.xx(Para adicionar algum arquivo específico)
+
+
+git reset HEADnome-do-arquivo.xx(É possível, também, desfazer a adição de algum arquivo, para isso, use o código)
+
+git commit-a-m "Mensagem do commit"(Também podemos adicionar e commitar ao mesmo tempo, basta adicionar a tag -a)
+
+git commit -m "Descrição da mudanca feita"
+git reset HEAD~1(Voltando um commit Caso tenha feito um commit e deseje desfaze-lo, digite)
+
+git log(Ver histórico de commits)
+
+git push origin master Ou git pull origin (Essa é a última parte da atualização, ele enviará para o repositório (gitlab, github..) as alterações feitas)
+
+FONTE : https://gist.github.com/adammacias/bb358a90a4f4cea50b41
